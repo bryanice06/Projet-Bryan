@@ -1,0 +1,66 @@
+    <div class="container header">
+      <nav class="nav-header">
+        <a href="index.php"><img class="logo logo-header" src="img/logo.png" alt="Logo"></a>
+        <a class="anime" href="etude.php"><i class="fa fa-book fan" aria-hidden="true"></i>Etudes & Expériences professionnelles</a>
+        <a class="anime" href="diplome.php"><i class="fa fa-columns fan" aria-hidden="true"></i>Diplômes</a>
+        <ul class="ul-a anime">
+          <li>
+            <a id="more" href="#"><i class="fa fa-cubes fan" aria-hidden="true"></i>Passions<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            <ul id="hidden-element" class="hidden position">
+              <li><a href="sport.php">Sports</a></li>
+              <li><a href="manga.php">Manga</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="anime" href="contact.php"><i class="fa fa-envelope" aria-hidden="true"></i>Contactez-Moi</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main-header container-main">
+      <section class="alpha">
+        <a href="add_manga.php">Ajouter un Manga</a>
+        <a href="add_sport.php">Ajouter un Sport</a>
+      </section>
+      <section class="delta">
+        <a href="admin.php"><h1 class="title">Panneau d'administration</h1></a>
+        <table class="art art-admin">
+          <caption class="title2 art">Liste des Manga</caption>
+          <thead>
+            <tr class="tab">
+              <th>Titre</th>
+              <th>Modifier</th>
+              <th>Supprimer</th>
+            </tr>
+          </thead>
+          <tbody>
+          <?php foreach($mangas as $manga): ?>
+            <tr class="tab" id="manga-<?= $manga['Id'] ?>">
+              <td><?= htmlspecialchars($manga['Title']) ?></td>
+              <td><a class="edit" href="edit_manga.php?mangaId=<?= $manga['Id'] ?>"><i class="fa fa-pencil"></i></a></td>
+              <td><a class="remove" data-id="<?= $manga['Id'] ?>" href="#"><i class="fa fa-remove"></i></a></td>
+            </tr>
+          <?php endforeach ?>
+          </tbody>
+        </table>
+        <table class="art art-admin">
+          <caption class="title2 art">Liste des Sports</caption>
+          <thead>
+            <tr class="tab">
+              <th>Sport</th>
+              <th>Modifier</th>
+              <th>Supprimer</th>
+            </tr>
+          </thead>
+          <tbody>
+          <?php foreach($sports as $sport): ?>
+            <tr class="tab" id="sport-<?= $sport['Id'] ?>">
+              <td><?= htmlspecialchars($sport['Title']) ?></td>
+              <td><a class="edit" href="edit_sport.php?sportId=<?= $sport['Id'] ?>"><i class="fa fa-pencil"></i></a></td>
+              <td><a class="remove" data-id="<?= $sport['Id'] ?>" href="#"><i class="fa fa-remove"></i></a></td>
+            </tr>
+          <?php endforeach ?>
+          </tbody>
+        </table>
+      </section>
+    </div>

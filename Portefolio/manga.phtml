@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Porte-Folio Fortin.B</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://use.fontawesome.com/0186f6ba39.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bellefair|Cormorant+Upright" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-1.6.2.min.js"
+  integrity="sha256-0W0HoDU0BfzslffvxQomIbx0Jfml6IlQeDlvsNxGDE8="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  <link rel="stylesheet" href="css/normalize-3.0.3.min.css"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animated.css">
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <nav class="nav-header">
+        <a href="index.php"><img class="logo logo-header" src="img/logo.png" alt="Logo"></a>
+        <a class="anime" href="etude.php"><i class="fa fa-book" aria-hidden="true"></i>Etudes & Expériences professionnelles</a>
+        <a class="anime" href="diplome.php"><i class="fa fa-columns" aria-hidden="true"></i>Diplômes</a>
+        <a class="anime" href="sport.php"><i class="fa fa-futbol-o" aria-hidden="true"></i>Sports</a>
+        <a class="anime" href="contact.php"><i class="fa fa-envelope" aria-hidden="true"></i>Contactez-Moi</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main-header container-main">
+      <section class="alpha">
+        <a href="add_manga.php"><i class="fa fa-file" aria-hidden="true"></i>Ajouter</a>
+        <a href="admin.php"><i class="fa fa-pencil" aria-hidden="true"></i>Modifier</a>
+        <a href="admin.php"><i class="fa fa-remove" aria-hidden="true"></i>Suprimer</a>
+      </section>
+      <section class="delta">
+        <a href="manga.php"><h1 class="title">Manga</h1></a>
+        <div class="manga">
+          <?php foreach($mangas as $manga): ?>
+          <article class="art art-manga">
+            <h2 class="title2"><?= htmlspecialchars($manga['Title']) ?></h2>
+            <div class="flexslider">
+              <ul class="slides">
+        				<li>
+        					<img class="img-silder" src="uploads/manga/<?= htmlspecialchars($manga['Image1']) ?>" alt="Image1<?= htmlspecialchars($manga['Title']) ?>" />
+        				</li>
+        				<li>
+        					<img class="img-silder" src="uploads/manga/<?= htmlspecialchars($manga['Image2']) ?>" alt="Image2<?= htmlspecialchars($manga['Title']) ?>" />
+        				</li>
+        				<li>
+        					<img class="img-silder" src="uploads/manga/<?= htmlspecialchars($manga['Image3']) ?>" alt="Image3<?= htmlspecialchars($manga['Title']) ?>" />
+        				</li>
+            	</ul>			
+      			</div>
+          </article>
+          <?php endforeach; ?>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container footer">
+      <a href="index.php"><img class="logo logo-header" src="img/logo.png" alt="Logo"></a>
+      <p>Voici mon Porte-Folio qui me permettra, je l'espère, d'obtenir mon diplôme <b>Apprenti Developpeur Intégrateur Web</b>. J'ai passé ma formation à la <i><a class="footer-lien" href="https://3wa.fr/">3WAcademy</a><i/>. Ceci est mon premier site, si vous voulez plus d'informations veuillez me <i><a class="footer-lien" href="mailto:bryanice@hotmail.fr">Contacter par email</a></i>. J'espère que vous avez aimé mon site et je vous souhaite une bonne journée.</p>
+    </div>
+  </footer>
+  <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+  </script>
+</body>
+</html>  
+      
+      
+      
+      
+      

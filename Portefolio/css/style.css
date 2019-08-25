@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.5s;
+}
+html{
+    font-size: 100%;
+}
+body{
+    line-height: 2;
+    font-size: 22px;
+    margin: 0;
+    font-family: 'Bellefair', serif;
+    background-color: #222;
+    color: #d2d0a4;
+}
+img{
+    max-width: 100%
+}
+.logo{
+    width: 80px;
+    transition: transform 1s;
+}
+a{
+    text-decoration: none;
+    color: #E9E386;
+}
+.title{
+    font-size: 45px;
+    text-align: center;
+    color: #c3a63f;
+}
+.title2{
+    color: white;
+    font-size: 35px;
+    margin-top: 0;
+}
+.title,
+.title2{
+    font-family: 'Cormorant Upright', serif;
+}
+.fa{
+    font-size: 0,9rem;
+    padding: 10px;
+}
+.container{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ul-a{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/******************** Header ********************/
+
+.header{
+    border-bottom: 3px solid #fff;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    align-items: center;
+}
+.nav-header .fa{
+    display: block;
+    text-align: center;
+}
+.nav-header .fa-sort-desc{
+    font-size: 15px;
+    display: inline-block;
+}
+.logo-header{
+    padding: 5px;
+}
+.position{
+    position: absolute;
+    top: 19%;
+    font-size: 18px;
+    list-style-type: circle;
+    transform: scaleY(1);
+    transform-origin: top center;
+    transition: all 1s;
+}
+.position a{
+    color: #fff;
+}
+.hidden{
+    transform: scaleY(0);
+}
+
+/******************** Header-page ********************/
+
+.page{
+    font-weight: bold;
+    border-bottom: 2px solid;
+    border-radius: 4%;
+}
+
+/******************** Main ********************/
+
+.main-header{
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.alpha{
+    width: 18%;
+    border-right: 3px solid #fff;
+    margin-right: 2%;
+}
+.alpha a{
+    display: block;
+}
+.delta{
+    width: 70%;
+    padding: 10px;
+    overflow: auto;
+    clear: both;
+}
+.art{
+    background-color: #353434;
+    margin-bottom: 20px; 
+    padding: 20px;
+}
+.profil{
+    float: right;
+    width: 230px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+/******************** Main-Manga ********************/
+
+.manga{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.art-manga{
+    width: 49%;
+}
+
+/******************** Main-admin ********************/
+
+.art-admin{
+    width: 100%;
+}
+.art-admin .tab{
+    border: 4px solid #222;
+    padding: 10px;
+    text-align: center;
+}
+.art-admin .fa{
+    padding: 0;
+}
+
+/******************** Main-contact ********************/
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: #353434;
+}
+
+.art-contact{
+    border-left: solid 5px #222;
+    margin-bottom: 0;
+    width: 33%;
+}
+
+/******************** Main-add ********************/
+
+.button{
+    background-color: #222;
+    border: 1px solid #fff;
+}
+
+/******************** Footer ********************/
+
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    color: #E9E386;
+}
+.footer-lien{
+    color: #ffb300;
+    font-size: 18px;
+}

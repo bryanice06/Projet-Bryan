@@ -1,0 +1,54 @@
+<div class="container header">
+      <nav class="nav-header">
+        <a href="index.php"><img class="logo logo-header" src="img/logo.png" alt="Logo"></a>
+        <a class="anime" href="etude.php"><i class="fa fa-book fan" aria-hidden="true"></i>Etudes & Expériences professionnelles</a>
+        <a class="anime" href="diplome.php"><i class="fa fa-columns fan" aria-hidden="true"></i>Diplômes</a>
+        <ul class="ul-a anime">
+          <li>
+            <a id="more" href="#"><i class="fa fa-cubes fan" aria-hidden="true"></i>Passions<i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            <ul id="hidden-element" class="hidden position">
+              <li><a href="sport.php">Sports</a></li>
+              <li><a href="manga.php">Manga</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="anime" href="contact.php"><i class="fa fa-envelope" aria-hidden="true"></i>Contactez-Moi</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main-header container-main">
+      <section class="alpha">
+        <a href="admin.php">Annuler</a>
+      </section>
+      <section class="delta">
+        <a href="edit_manga.php"><h1 class="title">Modifer un Manga</h1></a>
+        <form class="generic-form" action="edit_manga.php" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="mangaId" value="<?= $manga['Id'] ?>" />
+          <fieldset>
+            <legend><i class="fa fa-sticky-note-o"></i> Modifer le Manga</legend>
+            <ul>
+              <li>
+                <label for="title">Titre :</label>
+                <input type="text" id="title" name="title" value="<?= $manga['Title'] ?>">
+              </li>
+              <li>
+                <label for="image1">Image</label>
+                <input type="file" name="image1" id="image1" multiple>
+              </li>
+              <li>
+                <label for="image2">Image</label>
+                <input type="file" name="image2" id="image2" multiple>
+              </li>
+              <li>
+                <label for="image3">Image</label>
+                <input type="file" name="image3" id="image3" multiple>
+              </li>
+              <li>
+                <button class="button button-primary" type="submit">Enregistrer</button>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+    </div>
