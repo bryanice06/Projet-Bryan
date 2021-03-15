@@ -1,0 +1,35 @@
+version: '3.2'
+
+services:
+    serveur:
+        build: ./serveur
+        ports:
+            - "8080:3000"
+        expose:
+            - "8080"
+        restart: always
+
+    client_mobile:
+        build: ./app_mobile/
+        volumes: 
+        - apk:/mobile_app/
+
+    client_web:
+        build: ./web_app/
+        ports:
+            - "8081:3000"
+        expose:
+            - "8081"
+        restart: always
+        depends_on:
+        - client_mobile
+        volumes: 
+        - apk:/mobile_app/
+
+networks:
+    serveur:
+    client_mobile:
+    client_web:
+
+volumes:
+    apk:

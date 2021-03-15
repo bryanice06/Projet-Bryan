@@ -1,0 +1,4 @@
+#Sun Oct 25 23:30:34 CET 2020
+base.0=/home/bryanice/Epitech/Tek3/B-DEV-501-NCE-5-1-epicture-theo.jeanningros/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
