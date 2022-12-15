@@ -1,0 +1,2 @@
+ g++ main.cpp server.cpp server.hpp -pthread -ljack -lm -lpthread -g3 -fpermissive
+ 

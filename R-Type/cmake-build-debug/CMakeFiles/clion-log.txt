@@ -1,0 +1,19 @@
+/home/bryanfortin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/bryanfortin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/bin/ninja/linux/ninja -G Ninja -S /home/bryanfortin/B-CPP-501-NCE-5-1-rtype-theo.jeanningros -B /home/bryanfortin/B-CPP-501-NCE-5-1-rtype-theo.jeanningros/cmake-build-debug
+-- The C compiler identification is GNU 11.3.1
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Error at CMakeLists.txt:1 (project):
+  No CMAKE_CXX_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CXX" or the CMake cache entry CMAKE_CXX_COMPILER to the full path
+  to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/bryanfortin/B-CPP-501-NCE-5-1-rtype-theo.jeanningros/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/home/bryanfortin/B-CPP-501-NCE-5-1-rtype-theo.jeanningros/cmake-build-debug/CMakeFiles/CMakeError.log".

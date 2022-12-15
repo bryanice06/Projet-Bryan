@@ -1,0 +1,107 @@
+R_TYPE 1                     Instruction to R-TYPE author                    November 2021
+
+Network Working Group                                    ganng
+Request for Comments: R-Type                             ganng
+Category: Informational                                  Novembre 2020
+
+
+				Status of this Memo
+
+	This memo defines an Experimental Protocol for the Internet community.
+	This memo does not specify an Internet standard of any kind.
+	Discussion and suggestions for improvement are requested.
+	Distribution of this memo is unlimited.
+	The r-type protocol describe here is a binary protocole.
+
+				Copyright Notice
+
+	Copyright (C) ganng (2020). All Rights Reserved.
+
+				Table of Contents
+
+	1.	Introduction . . . . . . . . . . . . . . . . . . . . . . . . 1
+	2.	References . . . . . . . . . . . . . . . . . . . . . . . . . 1
+	3.	gameplay and features . . . . . . . . . . . . . . . . . . . 1
+	4.	Authorâ€™s Address . . . . . . . . . . . . . . . . . . . . . . 1
+	5. 	Copyright. . . . . . . . . . . . . . . . . . . . . . . . . . 2
+	6. 	Contact. . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+
+
+
+
+
+
+ganng 	Experimental				[Page 1]
+
+
+R_TYPE 1                     Instruction to R-TYPE author                    November 2021
+
+
+
+1. Introduction
+
+	This protocol is intended to provide a binary data transmission use
+	in a sever/client r-type game and be used between special purpose
+	units such as terminal servers or routers and a monitoring host.
+
+2. References
+
+	RFC 2223, RFC 2119
+
+
+3. Gameplay and features
+
+
+	the basic gameplay of the r-type is the movement of the ship so as not
+	to lose life and the shots which it sends in order to kill the enemies
+	on the ground. the games must be adaptable to multiplayer unfortunately
+	the multithraed server is not finished.
+
+	The games run via the SFMl graphics library contained in the clients,
+	the solo player games are therefore fully operational.
+
+
+4. Authors Address
+
+	Paul Riba
+	Epitech Nice
+	48 rue gioffredo nice.
+
+5. Copyright
+
+	Copyright (C) ganng (2020). All Rights Reserved.
+
+	This document and translations of it may be copied and furnished to others,
+	and derivative works that comment on or otherwise explain it or assist in its
+	implementation may be prepared, copied, published and distributed, in whole or
+	in part, without restriction of any kind, provided that the above copyright
+	notice and this paragraph are included on all such copies and derivative works.
+	However, this document itself may not be modified in any way, such as by removing
+	the copyright notice or references to the Internet Society or other Internet
+	organizations, except as needed for the purpose of developing Internet standards
+	in which case the procedures for copyrights defined in the Internet Standards
+	process must be followed, or as required to translate it into languages other
+	than English.
+
+	The limited permissions granted above are perpetual and will not be revoked
+	by the Internet Society or its successors or assigns.
+
+	This document and the information contained herein is provided on an "AS IS"
+	basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING TASK FORCE DISCLAIMS
+	ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT
+	THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED
+	WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+
+ganng 	Experimental				[Page 2]
+
+
+R_TYPE 1                     Instruction to R-TYPE author                    November 2021
+
+
+6. Contact
+
+	To contact the RFC Editor send an email message to
+
+		"paul.riba@epitech.eu"
